@@ -1,11 +1,8 @@
 #include <stdio.h>
 /**
- *
  * main - Start of compilation
  *
- * Return: 0 number
- *
- * Printf: prints various data types in C
+ * Return: 0 null value
  */
 int main(void)
 {
