@@ -2,7 +2,7 @@
 /**
  * main - Where the compiler starts
  *
- * Return 0 : nunber success
+ * Return: 0 success
  */
 int main(void)
 {
