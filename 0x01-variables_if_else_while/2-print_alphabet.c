@@ -2,7 +2,7 @@
 /**
  * main - Where the compiler starts
  *
- * Return 0: terminate program if logical
+ * Return 0 : nunber success
  */
 int main(void)
 {
