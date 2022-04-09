@@ -6,25 +6,21 @@
  */
 int main(void)
 {
-	char lowerAlphabet;
+	char lower_alphabet;
 
-	for (lowerAlphabet = 'a'; lowerAlphabet <= 'z'; lowerAlphabet++)
+	for (lower_alphabet = 'a'; lower_alphabet <= 'z'; lower_alphabet++)
 {
-	if (lowerAlphabet == 'e')
-{
+	if (lower_alphabet == 'e')
 	continue;
-}
-	else if (lowerAlphabet == 'q')
-{
+
+	else if (lower_alphabet == 'q')
 	continue;
-}
-	else
-{
-	putchar(lowerAlphabet);
+
+	putchar(lower_alphabet);
 }
 
 	putchar("\n");
 
 	return (0);
 
-}		
+}
