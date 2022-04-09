@@ -20,7 +20,7 @@ int main(void)
 }
 	else
 {
-	putchar(letterAlphabet);
+	putchar(lowerAlphabet);
 }
 
 	putchar("\n");
