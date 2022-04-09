@@ -10,16 +10,19 @@ int main(void)
 
 	for (lowerAlphabet = 'a'; lowerAlphabet <= 'z'; lowerAlphabet++)
 {
-	if (lowerAlphabet != 'e' && lowerAlphabet != 'q')
-{
-	putchar(lowerAlphabet);
-}
-	else
+	if (lowerAlphabet == 'e')
 {
 	continue;
 }
+	else if (lowerAlphabet == 'q')
+{
+	continue;
 }
-	
+	else
+{
+	putchar(letterAlphabet);
+}
+
 	putchar("\n");
 
 	return (0);
