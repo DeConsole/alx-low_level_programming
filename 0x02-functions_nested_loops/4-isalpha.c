@@ -1,19 +1,20 @@
 #include "main.h"
+
 /**
- * _isalpha - Return 1 if C us a letter
+ * _isalpha - Return 1 if C is a letter
  *
- * Return: 0
+ * Return: 0 Always
  */
 int _isalpha(int c)
 {
-	if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
+if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
 {
-	return (1);
+return (1);
 }
 
-	else
+else
 {
-	return (0);
+return (0);
 }
 
 }
