@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * cap_string - capitalizes all words of a string
  * @s: string to use
@@ -28,13 +27,11 @@ char *cap_string(char *s)
 }
 	j++;
 }
-
 	if (check == 1)
 {
 	s[i] -= 32;
 }
 }
-
 	i++;
 }
 
