@@ -13,7 +13,6 @@ unsigned int _strspn(char *s, char *accept)
 	a_len++;
 
 	for (i = 0; s[i] != '\0'; i++)
-
 	for (j = 0; j < a_len; j++)
 	if (s[i] == accept[j])
 	len++, j = a_len;
@@ -22,5 +21,5 @@ unsigned int _strspn(char *s, char *accept)
 	if (j == a_len - 1)
 	goto exit;
 
-	exit: return (len);
+exit: return (len);
 }
