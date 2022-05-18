@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - prints anything
+ *
  * @format: arguments passed to function
  * Return: void
  */
@@ -12,46 +13,42 @@ void print_all(const char * const format, ...)
 	const char t_arg[] = "cifs";
 
 	va_start(thelist, format);
-
 	while (format && format[i])
 {
 	e = 0;
-
 	while (t_arg[e])
 {
 	if (format[d] == t_arg[e] && f)
 {
 	printf(", ");
 	break;
-} 
-	e++;
+}e++;
 }
 	switch (format[d])
 {
 	case 'f':
-	printf("%c", va_arg(thelist, int)), f = 1;
+	printf("%f", va_arg(thelist, int)), f = 1;
 	break;
 
-	case 'g':
+	case 'i':
 	printf("%d", va_arg(thelist, int)), f = 1;
 	break;
 
-	case 'h':
-	printf("%f", va_arg(thelist, double)), f = 1;
+	case 'p':
+	printf("%p", va_arg(thelist, double)), f = 1;
 	break;
 
-	case 'm':
+	case 's':
 	str = va_arg(thelist, char *), f = 1;
 
 	if (!str)
 {
-	printf("(nil)");
+	printf("(null)");
 	break;
 }
 	printf("%s", str);
 	break;
-} 
-	d++;
+}d++;
 }
 	printf("\n"), va_end(thelist);
 }
