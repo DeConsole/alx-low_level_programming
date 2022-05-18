@@ -22,20 +22,20 @@ void print_all(const char * const format, ...)
 {
 	printf(", ");
 	break;
-}e++;
+} e++;
 }
 	switch (format[d])
 {
-	case 'f':
-	printf("%f", va_arg(thelist, int)), f = 1;
+	case 'c':
+	printf("%c", va_arg(thelist, int)), f = 1;
 	break;
 
 	case 'i':
 	printf("%d", va_arg(thelist, int)), f = 1;
 	break;
 
-	case 'p':
-	printf("%p", va_arg(thelist, double)), f = 1;
+	case 'f':
+	printf("%f", va_arg(thelist, double)), f = 1;
 	break;
 
 	case 's':
@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 }
 	printf("%s", str);
 	break;
-}d++;
+} d++;
 }
 	printf("\n"), va_end(thelist);
 }
