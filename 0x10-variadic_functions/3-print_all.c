@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 /**
  * print_all - prints anything
- *
  * @format: arguments passed to function
  * Return: void
  */
@@ -13,6 +12,7 @@ void print_all(const char * const format, ...)
 	const char t_arg[] = "cifs";
 
 	va_start(thelist, format);
+
 	while (format && format[i])
 {
 	e = 0;
