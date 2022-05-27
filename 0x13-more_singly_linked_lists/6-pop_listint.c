@@ -7,7 +7,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
-        int num;
+	int num;
 
 	if (!head || !*head)
 	return (0);
